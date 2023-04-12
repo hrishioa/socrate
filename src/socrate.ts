@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 
 import * as dotenv from "dotenv";
-dotenv.config();
+dotenv.config({path: ENV_FILE_LOCATION});
 
 import { parse } from "ts-command-line-args";
 import { DebateArguments } from './gpt/types';
 import { debate } from './rundebate';
-import { checkForStartingValuesAndSave } from './startingvalues';
+import { ENV_FILE_LOCATION, checkForStartingValuesAndSave } from './startingvalues';
 
 checkForStartingValuesAndSave().then(() => {
   const args = parse<DebateArguments>(

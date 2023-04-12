@@ -5,7 +5,7 @@ import * as dotenv from "dotenv";
 import { reconfigureGPT } from './gpt/base';
 dotenv.config();
 
-const ENV_FILE_LOCATION = path.join(__dirname, '..', '.env');
+export const ENV_FILE_LOCATION = path.join(__dirname, '..', '.env');
 const DATA_DIR_LOCATION = path.join(__dirname, '..', 'data');
 
 const question = (questionText: string) => {
