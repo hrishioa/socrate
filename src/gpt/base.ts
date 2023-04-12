@@ -20,18 +20,21 @@ import {
 } from "./types";
 const tokenizer = new GPT3Tokenizer({ type: "gpt3" });
 
-if (!process.env.OPENAI_API_KEY) {
-  console.log("PLEASE SET OPENAI_API_KEY IN THE .env FILE.");
-  process.exit(1);
-}
-
-const configuration = new Configuration({
+let configuration = new Configuration({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
-const openai = new OpenAIApi(configuration);
+let openai = new OpenAIApi(configuration);
 
 const DEBUG = process.env.IS_DEBUG === "true";
+
+export function reconfigureGPT() {
+  configuration = new Configuration({
+    apiKey: process.env.OPENAI_API_KEY,
+  });
+
+  openai = new OpenAIApi(configuration);
+}
 
 export const modelProperties: {
   [key in AcceptedModels]: {

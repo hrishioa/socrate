@@ -16,15 +16,10 @@ import path from "path";
 
 import { streamChatGPT } from "./gpt/base";
 
-if (!process.env.DATA_DIRECTORY) {
-  console.error("PLEASE SET DATA_DIRECTORY IN THE .env FILE.");
-  process.exit(1);
-}
-
 // Main constants for this module
 export const PREMADE_AGENTS = JSON.parse(
   fs.readFileSync(
-    path.join(process.env.DATA_DIRECTORY, "premade_agents.json"),
+    path.join( __dirname, "..", "agents", "premade_agents.json"),
     "utf8"
   )
 ) as AgentLibrary;
