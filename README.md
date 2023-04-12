@@ -26,6 +26,11 @@ yarn start -p 'Why shouldnt California be a country?'
 
 https://user-images.githubusercontent.com/973967/231541466-50bb34c8-97e0-4cf3-aa5f-1fcf2cc035f0.mp4
 
+## Requirements
+
+* Node >= 19
+* OpenAI API Key: [Get one here](https://platform.openai.com/account/api-keys). Socrate works with GPT-3 or 4, and it saves your key where it gets deleted if you uninstall the package. For better opsec, make a new one specifically for Socrate and delete it when you're done!
+
 ## Options
 
 You can run `socrate --help` to get this explanation of the customization:
