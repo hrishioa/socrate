@@ -3,10 +3,11 @@ import path from 'path';
 import fs from 'fs';
 import * as dotenv from "dotenv";
 import { reconfigureGPT } from './gpt/base';
-dotenv.config();
 
 export const ENV_FILE_LOCATION = path.join(__dirname, '..', '.env');
 const DATA_DIR_LOCATION = path.join(__dirname, '..', 'data');
+
+dotenv.config({path: ENV_FILE_LOCATION})
 
 const question = (questionText: string) => {
   const rl = createInterface({

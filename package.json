@@ -1,6 +1,6 @@
 {
   "name": "socrate",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "author": "Hrishi Olickel <hrishi[@]grey-wing.com> (https://olickel.com)",
   "description": "A discussion room for using GPT personalities with internal monologues to debate problems. Provide a problem to start, or customize the settings of the debate room. Custom agents incoming!",
   "bin": {
