@@ -6,7 +6,7 @@ Socrate provides an automated discussion between different personalities simulat
 
 ## 🔧 Usage
 
-# PICTURE HERE
+![run](https://user-images.githubusercontent.com/973967/231541504-827c63da-4956-4a38-9529-c638954bbe0f.jpg)
 
 Run this to get started immediately (type this into your Terminal after [installing node](#installing-node),
 ```bash
@@ -22,9 +22,9 @@ yarn
 yarn start -p 'Why shouldnt California be a country?'
 ```
 
-## Demo (11/04/2023):
+## 🧑‍🚀 Demo (11/04/2023):
 
-# VIDEO DEMO HERE
+https://user-images.githubusercontent.com/973967/231541466-50bb34c8-97e0-4cf3-aa5f-1fcf2cc035f0.mp4
 
 ## Options
 
