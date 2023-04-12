@@ -6,9 +6,11 @@ import { parse } from "ts-command-line-args";
 import { DebateArguments } from './gpt/types';
 import { debate } from './rundebate';
 import { ENV_FILE_LOCATION, checkForStartingValuesAndSave } from './startingvalues';
+import { reconfigureGPT } from './gpt/base';
 dotenv.config({path: ENV_FILE_LOCATION});
 
 checkForStartingValuesAndSave().then(() => {
+  reconfigureGPT();
   const args = parse<DebateArguments>(
     {
       problem: {
