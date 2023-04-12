@@ -14,7 +14,7 @@ npm i -g socrate
 socrate -p 'Should California be its own country?'
 ```
 
-Or clone the repo to customize agents and run:
+Or clone the repo (you can use npm instead of yarn if you like):
 ```bash
 git clone https://github.com/hrishioa/socrate
 cd socrate
