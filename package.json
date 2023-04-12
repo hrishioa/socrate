@@ -1,11 +1,12 @@
 {
   "name": "socrate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Hrishi Olickel <hrishi[@]grey-wing.com> (https://olickel.com)",
   "description": "A discussion room for using GPT personalities with internal monologues to debate problems. Provide a problem to start, or customize the settings of the debate room. Custom agents incoming!",
   "bin": {
     "socrate": "./dist/socrate.js"
   },
+  "license": "GPL-3.0-only",
   "scripts": {
     "build": "tsc",
     "start": "ts-node src/socrate.ts"
