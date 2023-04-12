@@ -33,8 +33,6 @@ export function reconfigureGPT() {
     apiKey: process.env.OPENAI_API_KEY,
   });
 
-  console.log('Reconfiguring with key ',process.env.OPENAI_API_KEY)
-
   openai = new OpenAIApi(configuration);
 }
 
